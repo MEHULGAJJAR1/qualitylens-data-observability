@@ -1,0 +1,7 @@
+# Optional adapters. The framework has deterministic built-in statistical/rule engines
+# and remains fully functional when these packages are not installed.
+# To enable optional vendor engines: pip install -r requirements-optional.txt
+# Great Expectations is called through a compatibility adapter; the built-in rule results
+# remain the persisted source of truth and produce the documented score.
+great-expectations>=1.3,<2.0
+evidently>=0.7,<1.0

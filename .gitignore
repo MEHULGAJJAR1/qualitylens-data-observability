@@ -1,0 +1,41 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+backend/.venv/
+.venv/
+venv/
+
+# Runtime database and uploaded user data
+backend/qualitylens.db
+backend/qualitylens.db-shm
+backend/qualitylens.db-wal
+backend/migration-test.db
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+
+# Node / build artifacts
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+*.tsbuildinfo
+npm-debug.log*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
